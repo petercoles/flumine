@@ -4,13 +4,13 @@
 
 Functions:
 
-- `add_client` Adds a [client](/advanced/#clients) to the framework
-- `add_strategy` Adds a [strategy](/advanced/#strategies) to the framework
-- `add_worker` Adds a [worker](/advanced/#background-workers) to the framework
-- `add_client_control` Adds a [client control](/advanced/#client-controls) to the framework
-- `add_trading_control` Adds a [trading control](/advanced/#trading-controls) to the framework
-- `add_market_middleware` Adds [market middleware](/markets/#middleware) to the framework
-- `add_logging_control` Adds a [logging control](/advanced/#logging-controls) to the framework
+- `add_client` Adds a [client](/flumine/clients) to the framework
+- `add_strategy` Adds a [strategy](/flumine/strategies) to the framework
+- `add_worker` Adds a [worker](/flumine/workers/#custom-workers) to the framework
+- `add_client_control` Adds a [client control](/flumine/controls/#client-controls) to the framework
+- `add_trading_control` Adds a [trading control](/flumine/controls/#trading-controls) to the framework
+- `add_market_middleware` Adds [market middleware](/flumine/markets/#middleware) to the framework
+- `add_logging_control` Adds a [logging control](/flumine/controls/#logging-controls) to the framework
 
 The Flumine class can be adapted by overriding the following functions:
 
@@ -23,7 +23,7 @@ The Flumine class can be adapted by overriding the following functions:
 - `_process_raw_data()` called on RawData event
 - `_process_market_catalogues` called on MarketCatalogue event
 - `_process_current_orders` called on currentOrders event
-- `_process_custom_event` called on CustomEvent event see [here](/advanced/#custom-event)
+- `_process_custom_event` called on CustomEvent event see [here](/flumine/architecture/#events)
 - `_process_close_market` called on Market closure
 - `_process_cleared_orders()` called on ClearedOrders event
 - `_process_cleared_markets()` called on ClearedMarkets event
